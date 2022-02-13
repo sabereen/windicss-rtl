@@ -1,0 +1,23 @@
+{
+  "name": "@windicss/plugin-rtl",
+  "version": "0.1.0",
+  "description": "A RTL plugin for WindiCSS",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "private": false,
+  "scripts": {},
+  "keywords": [],
+  "author": "Mojtaba Qasemzadeh Tehrany",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "windicss": "^3.4.3"
+  },
+  "devDependencies": {
+    "windicss": "^3.4.3"
+  }
+}
