@@ -1,12 +1,18 @@
 {
-  "name": "@windicss/plugin-rtl",
-  "version": "0.1.0",
+  "name": "windicss-rtl",
+  "version": "0.2.1",
   "description": "A RTL plugin for WindiCSS",
+  "repository": "https://github.com/sabereen/windicss-rtl",
   "main": "index.js",
   "typings": "index.d.ts",
   "private": false,
   "scripts": {},
-  "keywords": [],
+  "keywords": [
+    "windicss",
+    "rtl",
+    "right-to-left",
+    "logical-properties"
+  ],
   "author": "Mojtaba Qasemzadeh Tehrany",
   "license": "MIT",
   "files": [
@@ -18,6 +24,7 @@
     "windicss": "^3.4.3"
   },
   "devDependencies": {
+    "@types/node": "^17.0.17",
     "windicss": "^3.4.3"
   }
 }

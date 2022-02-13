@@ -1,11 +1,35 @@
 // @ts-check
-const plugin = require('windicss/plugin').default
+const req = require
 
-module.exports = plugin(({ addDynamic, theme }) => {
+/** @type { import('windicss/plugin')['default'] } */
+const plugin = req('windicss/plugin')
+
+module.exports = plugin(({ addUtilities, addDynamic, theme }) => {
+  addUtilities({
+    '.dir-rtl': {
+      direction: 'rtl',
+    },
+    '.dir-ltr': {
+      direction: 'ltr',
+    },
+  })
+
+  addUtilities({
+    '.text-start': {
+      textAlign: 'start',
+    },
+    '.text-end': {
+      textAlign: 'end',
+    },
+  })
+
   createDynamicLogical('ms', ['-webkit-margin-start', 'margin-inline-start'], theme('margin'))
   createDynamicLogical('me', ['-webkit-margin-end', 'margin-inline-end'], theme('margin'))
   createDynamicLogical('ps', ['-webkit-padding-start', 'padding-inline-start'], theme('padding'))
   createDynamicLogical('pe', ['-webkit-padding-end', 'padding-inline-end'], theme('padding'))
+
+  createDynamicLogical('start', ['inset-inline-start'], theme('inset'))
+  createDynamicLogical('end', ['inset-inline-end'], theme('inset'))
 
   /**
    * @param {string} className 

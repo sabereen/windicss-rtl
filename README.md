@@ -1,16 +1,15 @@
 # A RTL Plugin for WindiCSS
 
-It supports classes like `ms-3`, `me-2.1`, `-ms-4`, `ps-$myvar`, `pe-50vh`, ...
+It supports classes like `ms-3`, `me-2.1`, `-ms-4`, `ps-$myvar`, `pe-50vh`, `start-5`, `end-1/2` ...
 
-Usage:
-
-**windi.config.js**
+## Setup:
+in **windi.config.js**:
 ```js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
   plugins: [
-    require('@windicss/plugin-rtl'),
+    require('windicss-rtl'),
   ]
 })
 ```
